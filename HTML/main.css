@@ -1,0 +1,83 @@
+body {
+    background-color: black;
+    border: 2px solid orange;
+}
+
+.container {
+    display: grid; 
+    grid-template-columns: 20% 1fr 20%; 
+    grid-template-rows: 10% 30% 40% 20%; 
+    gap: 5px 5px; 
+    grid-template-areas: 
+    "navbar navbar navbar"
+    "header header header"
+    ". events ."
+    "footer footer footer"; 
+}
+
+.navbar { 
+    grid-area: navbar; 
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header { 
+    grid-area: header; 
+    color: aliceblue;
+}
+
+.img-head {
+    max-width: fit-content;
+}
+
+.footer { 
+    grid-area: footer; 
+}
+
+.events { 
+    grid-area: events; 
+}
+
+.flyer {
+        max-width: 75%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto;
+}
+
+.card {
+    background-color: rgb(230, 113, 17);
+    padding: 1em;
+    border: 2px solid black;
+    border-radius: 25px;
+    margin-bottom: 1vh;
+}
+
+.event-card > p {
+    margin: 2vh 0;
+}
+
+.more-link {
+    display: flex;
+    justify-content: space-around;
+}
+
+.more-link > a {
+    color: black;
+    text-decoration: none;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 2px;
+    background-color: rgb(236, 141, 63);
+}
+
+.more-link > a:hover {
+    font-size: larger;
+    color: aliceblue;
+}
