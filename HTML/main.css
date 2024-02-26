@@ -9,7 +9,7 @@ body {
 .container {
     display: grid; 
     grid-template-columns: 20% 60% 20%; 
-    grid-template-rows: 5% auto auto 20%; 
+    grid-template-rows: 5% auto auto auto; 
     /* gap: 5px 5px;  */
     grid-template-areas: 
     "navbar navbar navbar"
@@ -80,7 +80,29 @@ body {
 
 .footer { 
     grid-area: footer; 
+}
+
+.gridcontain {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-words {
+    /* grid-area: w; */
+    display: flex;
+    margin: 30px;
+    
+}
+
+.map {
+    /* grid-area: m; */
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 8%;
+    margin-right: 40px;
 }
 
 .events { 
@@ -150,4 +172,52 @@ body {
 .more-link > a:hover {
     font-size: larger;
     color: aliceblue;
+}
+
+.infor {
+    margin: 50px;
+
+}
+
+.event-footer {
+    margin: 50px;
+}
+
+.social {
+    margin: 50px;
+}
+
+.infor > p {
+    margin-top: 50px;
+}
+
+.info-bot {
+    font-size: 3vw;
+    font-family: sans-serif;
+}
+
+.event-footer > h4 {
+    font-size: 3vw;
+    font-family: sans-serif;
+}
+
+.event-footer > p {
+    margin-top: 50px;
+    color: white;
+}
+
+.social > h4 {
+    font-size: 3vw;
+    font-family: sans-serif;
+    color: white;
+}
+
+.social > p {
+    margin-top: 50px;
+    color: white;
+}
+
+.footer {
+    color: white;
+    background-color: black;
 }
